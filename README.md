@@ -1,8 +1,11 @@
 # linkedlist
-You will need two classes or factories:
+
+# You will need two classes or factories:
 1. LinkedList class / factory, which will represent the full list.
 2. Node class / factory, containing a value property and a nextNode property, set both as null by default.
-Build the following functions in your linked list class / factory:
+
+# Build the following functions in your linked list class / factory:
+
 1. append(value) adds a new node containing value to the end of the list
 2. prepend(value) adds a new node containing value to the start of the list
 3. size returns the total number of nodes in the list

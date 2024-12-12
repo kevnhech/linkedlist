@@ -15,6 +15,18 @@ class LinkedList {
       this.tail = newNode;
     }
   }
+
+  prepend(value) {
+    
+    if (!this.head) {
+      const newNode = new Node(value, null);
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      const newNode = new Node(value, this.head);
+      this.head = newNode;
+    }
+  }
 }
 
 class Node {

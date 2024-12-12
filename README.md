@@ -2,7 +2,7 @@
 
 # You will need two classes or factories:
 1. LinkedList class / factory, which will represent the full list. (Done)
-2. Node class / factory, containing a value property and a nextNode property, set both as null by default.
+2. Node class / factory, containing a value property and a nextNode property, set both as null by default. (Done)
 
 # Build the following functions in your linked list class / factory:
 

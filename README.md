@@ -9,7 +9,7 @@
 1. append(value) adds a new node containing value to the end of the list (Done)
 2. prepend(value) adds a new node containing value to the start of the list (Done)
 3. size returns the total number of nodes in the list (Done)
-4. head returns the first node in the list
+4. head returns the first node in the list (Done)
 5. tail returns the last node in the list
 6. at(index) returns the node at the given index
 7. pop removes the last element from the list

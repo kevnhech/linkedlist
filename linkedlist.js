@@ -79,6 +79,20 @@ class LinkedList {
     }
     return idx;
   }
+
+  toString() {
+    let currentNode = this.headNode;
+    let str = "";
+    for (let i = 0; i < this.count; i++) {
+      if (currentNode.value && currentNode.nextNode != null) {
+        str += `( ${currentNode.value} ) -> `;
+        currentNode = currentNode.nextNode;
+      } else {
+        str += `( ${currentNode.value} ) -> null`;
+      }
+    }
+    return str;
+  }
 }
 
 class Node {

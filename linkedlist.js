@@ -33,6 +33,10 @@ class LinkedList {
   size() {
     return this.count;
   }
+
+  head() {
+    return this.headNode;
+  }
 }
 
 class Node {

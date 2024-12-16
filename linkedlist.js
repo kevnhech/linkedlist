@@ -2,6 +2,7 @@ class LinkedList {
   constructor() {
     this.headNode = null;
     this.tailNode = null;
+    this.count = 0;
   }
 
   append(value) {
@@ -14,6 +15,7 @@ class LinkedList {
       this.tailNode.nextNode = newNode;
       this.tailNode = newNode;
     }
+    this.count++;
   }
 
   prepend(value) {
@@ -25,6 +27,7 @@ class LinkedList {
       const newNode = new Node(value, this.headNode);
       this.headNode = newNode;
     }
+    this.count++;
   }
 }
 

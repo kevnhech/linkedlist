@@ -37,6 +37,10 @@ class LinkedList {
   head() {
     return this.headNode;
   }
+
+  tail() {
+    return this.tailNode;
+  }
 }
 
 class Node {

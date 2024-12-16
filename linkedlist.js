@@ -69,6 +69,16 @@ class LinkedList {
     }
     return bool;
   }
+
+  find(value) {
+    let currentNode = this.headNode;
+    let idx = null;
+    for (let i = 0; i < this.count; i++) {
+      if (value == currentNode.value) idx = i;
+      currentNode = currentNode.nextNode;
+    }
+    return idx;
+  }
 }
 
 class Node {

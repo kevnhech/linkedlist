@@ -29,6 +29,10 @@ class LinkedList {
     }
     this.count++;
   }
+
+  size() {
+    return this.count;
+  }
 }
 
 class Node {

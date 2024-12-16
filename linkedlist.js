@@ -59,6 +59,16 @@ class LinkedList {
     this.tailNode = currentNode;
     this.count--;
   }
+
+  contains(value) {
+    let currentNode = this.headNode;
+    let bool = false;
+    for (let i = 0; i < this.count; i++) {
+      if (value == currentNode.value) bool = true;
+      currentNode = currentNode.nextNode;
+    }
+    return bool;
+  }
 }
 
 class Node {

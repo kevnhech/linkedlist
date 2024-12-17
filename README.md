@@ -18,5 +18,5 @@
 10. toString represents your LinkedList objects as strings, so you can print them out and preview them in the console. The format should be: ( value ) -> ( value ) -> ( value ) -> null (Done)
 
 # Extra credit
-1. insertAt(value, index) that inserts a new node with the provided value at the given index.
+1. insertAt(value, index) that inserts a new node with the provided value at the given index. (Done)
 2. removeAt(index) that removes the node at the given index.

@@ -93,6 +93,28 @@ class LinkedList {
     }
     return str;
   }
+
+  insertAt(value, index) {
+    let newNode = new Node(value, null);
+
+    if (index > this.count - 1) {
+      return "This index position doesn't exist. Please try again with a lower index.";
+    } else if (index == 0) {
+      newNode.nextNode = this.headNode;
+      this.headNode = newNode;
+    } else if (index == this.count - 1) {
+      this.tailNode.nextNode = newNode;
+      this.tailNode = newNode;
+    } else {
+      let currentNode = this.headNode;
+      for (let i = 0; i < index - 1; i++) {
+        currentNode = currentNode.nextNode;
+      }
+      newNode.nextNode = currentNode.nextNode;
+      currentNode.nextNode = newNode;
+    }
+    this.count++;
+  }
 }
 
 class Node {

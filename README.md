@@ -19,4 +19,4 @@
 
 # Extra credit
 1. insertAt(value, index) that inserts a new node with the provided value at the given index. (Done)
-2. removeAt(index) that removes the node at the given index.
+2. removeAt(index) that removes the node at the given index. (Done)

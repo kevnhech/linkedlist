@@ -7,7 +7,6 @@ class LinkedList {
 
   append(value) {
     const newNode = new Node(value, null);
-
     if (!this.headNode) {
       this.headNode = newNode;
       this.tailNode = newNode;
@@ -96,7 +95,6 @@ class LinkedList {
 
   insertAt(value, index) {
     let newNode = new Node(value, null);
-
     if (index > this.count - 1) {
       return "This index position doesn't exist. Please try again with a lower index.";
     } else if (index == 0) {
@@ -114,6 +112,29 @@ class LinkedList {
       currentNode.nextNode = newNode;
     }
     this.count++;
+  }
+
+  removeAt(index) {
+    let currentNode = this.headNode;
+    if (this.count == 1) {
+      return "The list is too small to remove any nodes.";
+    } else if (index > this.count - 1) {
+      return "This index position doesn't exist. Please try again with a lower index.";
+    } else if (index == 0) {
+      this.headNode = this.headNode.nextNode;
+    } else if (index == this.count - 1) {
+      for (let i = 0; i < index - 1; i++) {
+        currentNode = currentNode.nextNode;
+      }
+      currentNode.nextNode = null;
+      this.tailNode = currentNode;
+    } else {
+      for (let i = 0; i < index - 1; i++) {
+        currentNode = currentNode.nextNode;
+      }
+      currentNode.nextNode = currentNode.nextNode.nextNode;
+    }
+    this.count--;
   }
 }
 

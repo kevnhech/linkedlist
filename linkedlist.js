@@ -144,3 +144,5 @@ class Node {
     this.nextNode = nextNode;
   }
 }
+
+export { LinkedList };
